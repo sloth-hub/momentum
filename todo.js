@@ -26,11 +26,13 @@ function paintTodo(text) {
     const delBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = todos.length + 1;
-    delBtn.innerText= "❌";
+    delBtn.classList.add("delBtn");
+    delBtn.classList.add("glyphicon");
+    delBtn.classList.add("glyphicon-remove");
     delBtn.addEventListener("click", deleteTodo);
     span.innerText = text;
-    li.appendChild(delBtn);
     li.appendChild(span);
+    li.appendChild(delBtn);
     li.id = newId;
     todoList.appendChild(li);
     const todoObj = {

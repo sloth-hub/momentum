@@ -7,7 +7,7 @@ function getTime() {
     const hours = date.getHours();
     const seconds = date.getSeconds();
 
-    clockTitle.innerText = `${hours < 10 ? `0${hours}` : hours}:${
+    clockTitle.innerText = `${hours > 12 ? `PM`:`AM`} ${hours-12}:${
         minutes < 10 ? `0${minutes}` : minutes
         }:${seconds < 10 ? `0${seconds}` : seconds}`;
 }

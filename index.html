@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div class="js-clock">
-        <h1 class="js-title">00:00</h1>
-    </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?">
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-todoForm">
-        <input type="text" placeholder="Write a to do">
-    </form>
-    <ul class="js-todoList">
 
-    </ul>
-    <span class="js-weather"></span>
+<body>
+    <div class="container">
+        <div class="bgImage-black"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="js-clock">
+                    <div class="js-weather">
+                        <span class="weather"></span>
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <span class="place"></span>
+                    </div>
+                    <h1 class="js-title">00:00</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <form class="js-form form">
+                    <input type="text" placeholder="What is your name?" class="form-control">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h4 class="js-greetings greetings"></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <form class="js-todoForm">
+                    <input type="text" placeholder="Write a to do" class="form-control">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <ul class="js-todoList list-unstyled">
+
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="bg.js"></script>
     <script src="weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
